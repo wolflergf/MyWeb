@@ -13,5 +13,5 @@ news_params = {
 
 news_response = requests.get(NEWS_ENDPOINT, params=news_params)
 articles = news_response.json()["articles"]
-three_articles = articles[:9]
+three_articles = articles[:3]
 print(three_articles)
